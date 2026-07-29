@@ -1,0 +1,68 @@
+コマンドライン引数で指定したファイルが10MB（10,485,760バイト）以上かどうかを判定し、条件に合う場合にメッセージを出力するBashスクリプト（またはワンライナー）です。
+
+### 1. ワンライナー（1行で実行する場合）
+
+ターミナルにそのままコピー＆ペーストして実行できます。`filename.txt` の部分を対象のファイル名に変更してください。
+
+```bash
+[ -f "filename.txt" ] && [ $(stat -f%z "filename.txt" 2>/dev/null || stat -c%s "filename.txt") -ge 10485760 ] && echo "10MB以上です。"
+```
+
+※ macOSとLinux（Ubuntu、CentOSなど）の両方の `stat` コマンドに対応させています。
+
+---
+
+### 2. スクリプトファイルとして作る場合（おすすめ）
+
+より安全で使いやすいように、シェルスクリプトとしてファイルに保存して実行する方法です。
+
+1. 適当な名前（例: `check_size.sh`）でファイルを作成します。
+2. 以下のコードを書き込みます。
+
+```bash
+#!/bin/bash
+
+# 引数が指定されているかチェック
+if [ $# -eq 0 ]; then
+    echo "使用方法: $0 <ファイル名>"
+    exit 1
+fi
+
+FILE="$1"
+
+# ファイルが存在するかチェック
+if [ ! -f "$FILE" ]; then
+    echo "エラー: ファイル '${FILE}' が存在しません。"
+    exit 1
+fi
+
+# ファイルサイズを取得（バイト単位）
+# macOSとLinuxの両方に対応するための分岐
+if stat -f%z "$FILE" >/dev/null 2>&1; then
+    # macOS用
+    FILESIZE=$(stat -f%z "$FILE")
+else
+    # Linux用
+    FILESIZE=$(stat -c%s "$FILE")
+fi
+
+# 10MB = 10 * 1024 * 1024 バイト = 10485760 バイト
+LIMIT=$((10 * 1024 * 1024))
+
+# 判定
+if [ "$FILESIZE" -ge "$LIMIT" ]; then
+    echo "10MB以上です。"
+fi
+```
+
+#### 使い方:
+
+実行権限を付与して実行します。
+
+```bash
+# 実行権限を与える
+chmod +x check_size.sh
+
+# 実行する
+./check_size.sh 検査したいファイル名
+```

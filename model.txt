@@ -1,0 +1,32 @@
+申し訳ありませんが、私の知識のカットオフ（データ収集の限界）は2025年1月までとなっており、**令和8年（2026年）7月29日時点**において具体的にどのGeminiモデルが稼働しているか、また最新のモデルがどうなっているかをリアルタイムで把握することはできません。
+
+しかし、GoogleのGemini APIの命名規則やこれまでのアップデートの傾向、そして一般的なAIモデルのライフサイクルを踏まえると、2026年時点では以下のような状況になっていることが予想されます。
+
+### 予想されるモデルの状況（2026年中頃）
+1. **Gemini 1.5 シリーズの終了またはレガシー化**
+   * 2024年〜2025年に主流だった `Gemini 1.5 Pro` や `Gemini 1.5 Flash` は、より新しい世代のモデルに置き換わっているか、サポート終了（非推奨）になっている可能性が高いです。
+2. **Gemini 2.x またはさらに新しい世代の主流化**
+   * 2025年以降に登場していると予想される「Gemini 2.x」世代や、それ以降のモデルが標準（Default）として使われている可能性が高いです。
+   * 用途別（超高速・軽量なFlash系、高度な推論・マルチモーダルに強いPro/Ultra系など）にラインナップが分かれているはずです。
+
+---
+
+### 正確な情報を確認する方法
+令和8年7月29日時点で利用可能なモデルを確認するには、以下の公式ドキュメントを参照してください。Googleは常にAPIのモデルリストを更新しています。
+
+* **Google AI Studio / Vertex AI 公式ドキュメント**
+  * [Gemini Models - Google AI for Developers](https://ai.google.dev/models/gemini?hl=ja)
+* **APIを使った動的な確認方法**
+  PythonなどのSDKを使用している場合、コードで現在利用可能なモデルの一覧を取得することができます。
+
+```python
+import google.generativeai as genai
+
+genai.configure(api_key="YOUR_API_KEY")
+
+for m in genai.list_models():
+  if "generateContent" in m.supported_generation_methods:
+    print(m.name)
+```
+
+お手数ですが、実際の開発の際には上記の公式ドキュメントやAPI経由でのリスト取得機能をご確認ください。

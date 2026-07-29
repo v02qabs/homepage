@@ -1,0 +1,74 @@
+Python 3.13環境で `module google.generativeaiが見つからない`（`ModuleNotFoundError: No module named 'google.generativeai'`）というエラーが出る場合、以下の原因と対策が考えられます。
+
+Python 3.13は比較的新しいため、ツールやライブラリのインストール方法に少しコツがいります。
+
+---
+
+### 原因1：ライブラリがインストールされていない
+そもそも `google-generativeai` パッケージがインストールされていません。
+
+**対策:**
+以下のコマンドを実行してインストールしてください。
+
+```bash
+pip install google-generativeai
+```
+※もし `pip` でうまくいかない場合は、Python 3.13を指定して以下を試してください。
+```bash
+python3 -m pip install google-generativeai
+```
+
+---
+
+### 原因2：VSCodeや仮想環境で「別のPython」を使っている
+ターミナルでインストールしたつもりでも、VSCodeなどのエディタや、別の仮想環境（venvなど）で古いPythonや別のPythonが使われている場合があります。
+
+**対策:**
+今動かしているPythonの環境にちゃんとインストールされているか確認するため、以下のコマンドでPythonを起動し、インポートできるかテストしてみてください。
+
+```bash
+python3
+```
+Pythonの対話モード（`>>>`）になったら、以下を入力します。
+```python
+import google.generativeai as genai
+```
+ここでエラーが出なければ、インストールは成功しています。エラーが出る場合は、使っているPythonのパスがズレています。
+
+---
+
+### 原因3：古いライブラリのバージョンを使っている（Python 3.13の非互換性）
+非常に稀ですが、古いバージョンの `google-generativeai` はPython 3.13の変更に対応しきれていない場合があります。
+
+**対策:**
+パッケージを最新版にアップグレードしてください。
+
+```bash
+pip install --upgrade google-generativeai
+```
+
+---
+
+### 💡 それでも解決しない場合（推奨の代替手段）
+Googleは現在、Geminiを使うための新しい公式SDKとして **`google-genai`** というパッケージを推奨しています（従来の `google-generativeai` も使えますが、今後は新しい方に移行していきます）。
+
+もしエラーが解決しない場合は、古い方をアンインストールして、新しい方を試してみてください。
+
+```bash
+# 古い方を削除（必要に応じて）
+pip uninstall google-generativeai
+
+# 新しい公式SDKをインストール
+pip install google-genai
+```
+
+**新しいSDKの基本的な使い方:**
+```python
+from google import genai
+
+client = genai.Client(api_key="あなたのAPIキー")
+response = client.models.generate_content(
+    model="gemini-2.5-flash", contents="こんにちは！"
+)
+print(response.text)
+```

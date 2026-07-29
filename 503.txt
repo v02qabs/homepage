@@ -1,0 +1,61 @@
+Gemini APIで**503エラー（Service Unavailable）**が発生している場合、主に**「Google側のサーバーが一時的に高負荷である、またはメンテナンス中である」**ことが原因です。
+
+ご自身のコードに問題があるケースは少ないですが、いくつかの確認ポイントと対処法があります。
+
+---
+
+### 主な原因と対処法
+
+#### 1. Google側の一時的な障害・高負荷 (一番多い)
+世界中でアクセスが集中している場合や、Google側でシステム障害が起きている場合に発生します。
+* **対処法:** 数秒〜数分待ってから、再度リクエストを送信してください。
+
+#### 2. レートリミット（利用制限）の超過
+無料枠（Free Tier）などでは、1分あたりのリクエスト数（RPM）やトークン数に制限があります。短時間に大量のリクエストを送ると、503や429エラーが返ることがあります。
+* **対処法:** リクエストの間に少しウェイト（遅延）を入れるか、有料枠（Pay-as-you-go）へのアップグレードを検討してください。
+
+#### 3. プロンプトが重すぎる（過大な負荷）
+一度に長すぎるテキストや、巨大な画像・動画などを送信してモデルが処理しきれず、サーバーエラーになるケースがあります。
+* **対処法:** 入力データを分割して送信するようにしてみてください。
+
+---
+
+### 推奨される実装（リトライ処理）
+
+503エラーは一時的なものであることが多いため、プログラム側で**「リトライ（再試行）処理」**を実装するのが一般的です。
+
+Pythonの公式ライブラリ（`google-generativeai`）を使用している場合のエラーハンドリングとリトライの例：
+
+```python
+import time
+from google.api_core import exceptions
+import google.generativeai as genai
+
+genai.configure(api_key="YOUR_API_KEY")
+model = genai.GenerativeModel("gemini-pro")
+
+# リトライロジックの例
+max_retries = 3
+delay = 2  # 秒
+
+for attempt in range(max_retries):
+    try:
+        response = model.generate_content("こんにちは！")
+        print(response.text)
+        break  # 成功したらループを抜ける
+
+    except exceptions.ServiceUnavailable as e:
+        print(
+            f"503エラーが発生しました。{delay}秒後に再試行します... (試行 {attempt + 1}/{max_retries})"
+        )
+        time.sleep(delay)
+        delay *= 2  # バックオフ（待ち時間を増やしていく）
+    except Exception as e:
+        print(f"その他のエラーが発生しました: {e}")
+        break
+```
+
+### 現在の障害情報を確認する
+もし長時間を経てもエラーが解消されない場合は、Google側で大規模な障害が発生している可能性があります。
+* [Google Cloud Status Dashboard](https://status.cloud.google.com/) （Vertex AI等のステータス）
+* Google AI for Developers の公式フォーラムやSNS等で同様の報告がないか確認してみてください。

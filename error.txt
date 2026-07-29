@@ -1,0 +1,9 @@
+(venv) root@user-80g0:/home/user/git/homepage# sh ./make_menu.sh 
+./make_menu.sh: 5: [[: not found
+./make_menu.sh: 5: [[: not found
+./make_menu.sh: 5: [[: not found
+./make_menu.sh: 5: [[: not found
+./make_menu.sh: 5: [[: not found
+./make_menu.sh: 5: [[: not found
+./make_menu.sh: 5: [[: not found
+(venv) root@user-80g0:/home/user/git/homepage#

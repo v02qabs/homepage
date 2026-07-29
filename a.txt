@@ -1,0 +1,13 @@
+        <li><a href="index.html" class="active">トップページ</a></li>
+        <li><a href="#">AndroidApp</a></li>
+        <li><a href="#">Clang</a></li>
+        <li><a href="#">Java</a></li>
+        <li><a href="python3.html">python</a></li>
+        <li><a href="#">windows</a></li>
+        <li><a href="Linux.html">Linux</a></li>
+        <li><a href="#">Chrome Book cm3</a></li>
+(venv) root@user-80g0:/home/user/git/homepage# cp index.html AndroidApp.html
+(venv) root@user-80g0:/home/user/git/homepage# cp index.html Clang.html
+(venv) root@user-80g0:/home/user/git/homepage# cp index.html Java.html
+(venv) root@user-80g0:/home/user/git/homepage# cp index.html windows.html
+(venv) root@user-80g0:/home/user/git/homepage# 

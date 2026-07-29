@@ -1,0 +1,41 @@
+エラーメッセージから、Pythonのスクリプト（`/usr/local/bin/up-gemini.py`）を実行しようとした際、Google GenAIの公式SDK（`google-genai`）がインストールされていないためにエラーが発生しています。
+
+`pip`を使って該当するモジュールをインストールするには、以下の手順を実行してください。
+
+### 1. モジュールのインストール
+
+ターミナルで以下のコマンドを実行し、Google GenAI SDKをインストールします。
+
+```bash
+pip install google-genai
+```
+
+もし上記で権限エラー（Permission denied）が出る場合は、ユーザー環境にインストールするか、`sudo`を使用してください。
+
+**ユーザー環境にインストールする場合（推奨）：**
+```bash
+pip install --user google-genai
+```
+
+**システム全体にインストールする場合：**
+```bash
+sudo pip install google-genai
+```
+
+---
+
+### 2. （参考）仮想環境を使っている場合
+もしプロジェクト（`~/git/homepage-pip`など）でPythonの仮想環境（venvなど）を使っている場合は、**仮想環境を有効化してから**インストールする必要があります。
+
+```bash
+# 仮想環境のディレクトリへ移動（例： .venv の場合）
+cd ~/git/homepage-pip
+
+# 仮想環境の有効化
+source .venv/bin/activate  # Windowsや環境によってパスが異なる場合があります
+
+# その上でインストール
+pip install google-genai
+```
+
+インストール完了後、再度 `/usr/local/bin/up-gemini.py` を実行してみてください。
