@@ -1,0 +1,1119 @@
+.
+├── 503.txt
+├── AndroidApp
+│   ├── Hello7
+│   │   ├── AndroidManifest.xml
+│   │   ├── ant.properties
+│   │   ├── bin
+│   │   │   ├── AndroidManifest.xml
+│   │   │   ├── AndroidManifest.xml.d
+│   │   │   ├── HelloFire7-debug-unaligned.apk
+│   │   │   ├── HelloFire7-debug-unaligned.apk.d
+│   │   │   ├── HelloFire7-debug.apk
+│   │   │   ├── HelloFire7.ap_
+│   │   │   ├── HelloFire7.ap_.d
+│   │   │   ├── build.prop
+│   │   │   ├── classes
+│   │   │   │   ├── com
+│   │   │   │   │   ├── hiro
+│   │   │   │   │   │   ├── fire
+│   │   │   │   │   │   │   ├── hello
+│   │   │   │   │   │   │   │   ├── BuildConfig.class
+│   │   │   │   │   │   │   │   ├── MainActivity.class
+│   │   │   │   │   │   │   │   ├── R$attr.class
+│   │   │   │   │   │   │   │   ├── R$drawable.class
+│   │   │   │   │   │   │   │   ├── R$id.class
+│   │   │   │   │   │   │   │   ├── R$layout.class
+│   │   │   │   │   │   │   │   ├── R$string.class
+│   │   │   │   │   │   │   │   ├── R.class
+│   │   │   │   │   │   │   │   └── index.html
+│   │   │   │   │   │   │   └── index.html
+│   │   │   │   │   │   └── index.html
+│   │   │   │   │   └── index.html
+│   │   │   │   └── index.html
+│   │   │   ├── classes.dex
+│   │   │   ├── classes.dex.d
+│   │   │   ├── index.html
+│   │   │   ├── proguard.txt
+│   │   │   └── res
+│   │   │       ├── drawable-hdpi
+│   │   │       │   ├── ic_launcher.png
+│   │   │       │   └── index.html
+│   │   │       ├── drawable-ldpi
+│   │   │       │   ├── ic_launcher.png
+│   │   │       │   └── index.html
+│   │   │       ├── drawable-mdpi
+│   │   │       │   ├── ic_launcher.png
+│   │   │       │   └── index.html
+│   │   │       ├── drawable-xhdpi
+│   │   │       │   ├── ic_launcher.png
+│   │   │       │   └── index.html
+│   │   │       └── index.html
+│   │   ├── build.xml
+│   │   ├── gen
+│   │   │   ├── R.java.d
+│   │   │   ├── com
+│   │   │   │   ├── hiro
+│   │   │   │   │   ├── fire
+│   │   │   │   │   │   ├── hello
+│   │   │   │   │   │   │   ├── BuildConfig.java
+│   │   │   │   │   │   │   ├── R.java
+│   │   │   │   │   │   │   └── index.html
+│   │   │   │   │   │   └── index.html
+│   │   │   │   │   └── index.html
+│   │   │   │   └── index.html
+│   │   │   └── index.html
+│   │   ├── index.html
+│   │   ├── local.properties
+│   │   ├── proguard-project.txt
+│   │   ├── project.properties
+│   │   ├── res
+│   │   │   ├── drawable-hdpi
+│   │   │   │   ├── ic_launcher.png
+│   │   │   │   └── index.html
+│   │   │   ├── drawable-ldpi
+│   │   │   │   ├── ic_launcher.png
+│   │   │   │   └── index.html
+│   │   │   ├── drawable-mdpi
+│   │   │   │   ├── ic_launcher.png
+│   │   │   │   └── index.html
+│   │   │   ├── drawable-xhdpi
+│   │   │   │   ├── ic_launcher.png
+│   │   │   │   └── index.html
+│   │   │   ├── index.html
+│   │   │   ├── layout
+│   │   │   │   ├── index.html
+│   │   │   │   └── main.xml
+│   │   │   ├── layout-large
+│   │   │   │   ├── index.html
+│   │   │   │   └── main.xml
+│   │   │   └── values
+│   │   │       ├── index.html
+│   │   │       └── strings.xml
+│   │   └── src
+│   │       ├── com
+│   │       │   ├── hiro
+│   │       │   │   ├── fire
+│   │       │   │   │   ├── hello
+│   │       │   │   │   │   ├── MainActivity.java
+│   │       │   │   │   │   └── index.html
+│   │       │   │   │   └── index.html
+│   │       │   │   └── index.html
+│   │       │   └── index.html
+│   │       └── index.html
+│   ├── Hello7inch
+│   │   ├── AndroidManifest.xml
+│   │   ├── build.xml
+│   │   ├── index.html
+│   │   ├── local.properties
+│   │   ├── project.properties
+│   │   ├── res
+│   │   │   ├── index.html
+│   │   │   ├── layout
+│   │   │   │   ├── index.html
+│   │   │   │   └── main.xml
+│   │   │   ├── layout-large
+│   │   │   │   ├── index.html
+│   │   │   │   └── main.xml
+│   │   │   └── values
+│   │   │       ├── index.html
+│   │   │       └── strings.xml
+│   │   └── src
+│   │       ├── com
+│   │       │   ├── example
+│   │       │   │   ├── hello7inch
+│   │       │   │   │   ├── MainActivity.java
+│   │       │   │   │   └── index.html
+│   │       │   │   └── index.html
+│   │       │   └── index.html
+│   │       └── index.html
+│   ├── HtmlViewer
+│   │   ├── AndroidManifest.xml
+│   │   ├── ant.properties
+│   │   ├── bin
+│   │   │   ├── AndroidManifest.xml
+│   │   │   ├── AndroidManifest.xml.d
+│   │   │   ├── HtmlViewer-debug-unaligned.apk
+│   │   │   ├── HtmlViewer-debug-unaligned.apk.d
+│   │   │   ├── HtmlViewer-debug.apk
+│   │   │   ├── HtmlViewer.ap_
+│   │   │   ├── HtmlViewer.ap_.d
+│   │   │   ├── build.prop
+│   │   │   ├── classes
+│   │   │   │   ├── com
+│   │   │   │   │   ├── example
+│   │   │   │   │   │   ├── htmlviewer
+│   │   │   │   │   │   │   ├── MainActivity.class
+│   │   │   │   │   │   │   └── index.html
+│   │   │   │   │   │   └── index.html
+│   │   │   │   │   └── index.html
+│   │   │   │   ├── hiro
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── take
+│   │   │   │   │       ├── html
+│   │   │   │   │       │   ├── index.html
+│   │   │   │   │       │   └── viewer
+│   │   │   │   │       │       ├── BuildConfig.class
+│   │   │   │   │       │       ├── MainActivity.class
+│   │   │   │   │       │       ├── R$attr.class
+│   │   │   │   │       │       ├── R$drawable.class
+│   │   │   │   │       │       ├── R$layout.class
+│   │   │   │   │       │       ├── R$string.class
+│   │   │   │   │       │       ├── R.class
+│   │   │   │   │       │       └── index.html
+│   │   │   │   │       └── index.html
+│   │   │   │   └── index.html
+│   │   │   ├── classes.dex
+│   │   │   ├── classes.dex.d
+│   │   │   ├── index.html
+│   │   │   ├── proguard.txt
+│   │   │   └── res
+│   │   │       ├── drawable-hdpi
+│   │   │       │   ├── ic_launcher.png
+│   │   │       │   └── index.html
+│   │   │       ├── drawable-ldpi
+│   │   │       │   ├── ic_launcher.png
+│   │   │       │   └── index.html
+│   │   │       ├── drawable-mdpi
+│   │   │       │   ├── ic_launcher.png
+│   │   │       │   └── index.html
+│   │   │       ├── drawable-xhdpi
+│   │   │       │   ├── ic_launcher.png
+│   │   │       │   └── index.html
+│   │   │       └── index.html
+│   │   ├── build.xml
+│   │   ├── gen
+│   │   │   ├── R.java.d
+│   │   │   ├── hiro
+│   │   │   │   ├── index.html
+│   │   │   │   └── take
+│   │   │   │       ├── html
+│   │   │   │       │   ├── index.html
+│   │   │   │       │   └── viewer
+│   │   │   │       │       ├── BuildConfig.java
+│   │   │   │       │       ├── R.java
+│   │   │   │       │       └── index.html
+│   │   │   │       └── index.html
+│   │   │   └── index.html
+│   │   ├── index.html
+│   │   ├── local.properties
+│   │   ├── proguard-project.txt
+│   │   ├── project.properties
+│   │   ├── res
+│   │   │   ├── drawable-hdpi
+│   │   │   │   ├── ic_launcher.png
+│   │   │   │   └── index.html
+│   │   │   ├── drawable-ldpi
+│   │   │   │   ├── ic_launcher.png
+│   │   │   │   └── index.html
+│   │   │   ├── drawable-mdpi
+│   │   │   │   ├── ic_launcher.png
+│   │   │   │   └── index.html
+│   │   │   ├── drawable-xhdpi
+│   │   │   │   ├── ic_launcher.png
+│   │   │   │   └── index.html
+│   │   │   ├── index.html
+│   │   │   ├── layout
+│   │   │   │   ├── index.html
+│   │   │   │   └── main.xml
+│   │   │   └── values
+│   │   │       ├── index.html
+│   │   │       └── strings.xml
+│   │   └── src
+│   │       ├── hiro
+│   │       │   ├── index.html
+│   │       │   └── take
+│   │       │       ├── html
+│   │       │       │   ├── index.html
+│   │       │       │   └── viewer
+│   │       │       │       ├── MainActivity.java
+│   │       │       │       └── index.html
+│   │       │       └── index.html
+│   │       └── index.html
+│   ├── MyApp
+│   │   ├── AndroidManifest.xml
+│   │   ├── ant.properties
+│   │   ├── bin
+│   │   │   ├── AndroidManifest.xml
+│   │   │   ├── AndroidManifest.xml.d
+│   │   │   ├── MyFirstApp-debug-unaligned.apk
+│   │   │   ├── MyFirstApp-debug-unaligned.apk.d
+│   │   │   ├── MyFirstApp-debug.apk
+│   │   │   ├── MyFirstApp.ap_
+│   │   │   ├── MyFirstApp.ap_.d
+│   │   │   ├── build.prop
+│   │   │   ├── classes
+│   │   │   │   ├── hiro
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── take
+│   │   │   │   │       ├── index.html
+│   │   │   │   │       └── myapp
+│   │   │   │   │           ├── BuildConfig.class
+│   │   │   │   │           ├── MainActivity.class
+│   │   │   │   │           ├── R$attr.class
+│   │   │   │   │           ├── R$drawable.class
+│   │   │   │   │           ├── R$layout.class
+│   │   │   │   │           ├── R$string.class
+│   │   │   │   │           ├── R.class
+│   │   │   │   │           └── index.html
+│   │   │   │   └── index.html
+│   │   │   ├── classes.dex
+│   │   │   ├── classes.dex.d
+│   │   │   ├── index.html
+│   │   │   ├── proguard.txt
+│   │   │   └── res
+│   │   │       ├── drawable-hdpi
+│   │   │       │   ├── ic_launcher.png
+│   │   │       │   └── index.html
+│   │   │       ├── drawable-ldpi
+│   │   │       │   ├── ic_launcher.png
+│   │   │       │   └── index.html
+│   │   │       ├── drawable-mdpi
+│   │   │       │   ├── ic_launcher.png
+│   │   │       │   └── index.html
+│   │   │       ├── drawable-xhdpi
+│   │   │       │   ├── ic_launcher.png
+│   │   │       │   └── index.html
+│   │   │       └── index.html
+│   │   ├── build.xml
+│   │   ├── gen
+│   │   │   ├── R.java.d
+│   │   │   ├── hiro
+│   │   │   │   ├── index.html
+│   │   │   │   └── take
+│   │   │   │       ├── index.html
+│   │   │   │       └── myapp
+│   │   │   │           ├── BuildConfig.java
+│   │   │   │           ├── R.java
+│   │   │   │           └── index.html
+│   │   │   └── index.html
+│   │   ├── index.html
+│   │   ├── local.properties
+│   │   ├── proguard-project.txt
+│   │   ├── project.properties
+│   │   ├── res
+│   │   │   ├── drawable-hdpi
+│   │   │   │   ├── ic_launcher.png
+│   │   │   │   └── index.html
+│   │   │   ├── drawable-ldpi
+│   │   │   │   ├── ic_launcher.png
+│   │   │   │   └── index.html
+│   │   │   ├── drawable-mdpi
+│   │   │   │   ├── ic_launcher.png
+│   │   │   │   └── index.html
+│   │   │   ├── drawable-xhdpi
+│   │   │   │   ├── ic_launcher.png
+│   │   │   │   └── index.html
+│   │   │   ├── index.html
+│   │   │   ├── layout
+│   │   │   │   ├── index.html
+│   │   │   │   └── main.xml
+│   │   │   └── values
+│   │   │       ├── index.html
+│   │   │       └── strings.xml
+│   │   └── src
+│   │       ├── hiro
+│   │       │   ├── index.html
+│   │       │   └── take
+│   │       │       ├── index.html
+│   │       │       └── myapp
+│   │       │           ├── MainActivity.java
+│   │       │           └── index.html
+│   │       └── index.html
+│   ├── MyApp2
+│   │   ├── app
+│   │   │   ├── build.gradle
+│   │   │   ├── index.html
+│   │   │   └── src
+│   │   │       ├── index.html
+│   │   │       ├── main
+│   │   │       │   ├── index.html
+│   │   │       │   └── java
+│   │   │       │       ├── index.html
+│   │   │       │       └── org
+│   │   │       │           ├── example
+│   │   │       │           │   ├── App.java
+│   │   │       │           │   └── index.html
+│   │   │       │           └── index.html
+│   │   │       └── test
+│   │   │           ├── index.html
+│   │   │           └── java
+│   │   │               ├── index.html
+│   │   │               └── org
+│   │   │                   ├── example
+│   │   │                   │   ├── AppTest.java
+│   │   │                   │   └── index.html
+│   │   │                   └── index.html
+│   │   ├── build.gradle
+│   │   ├── gradle
+│   │   │   ├── index.html
+│   │   │   ├── libs.versions.toml
+│   │   │   └── wrapper
+│   │   │       ├── gradle-wrapper.jar
+│   │   │       ├── gradle-wrapper.properties
+│   │   │       └── index.html
+│   │   ├── gradle.properties
+│   │   ├── gradlew
+│   │   ├── gradlew.bat
+│   │   ├── index.html
+│   │   ├── myapp2.sh
+│   │   └── settings.gradle
+│   ├── MyApp3
+│   │   ├── app
+│   │   │   ├── build.gradle
+│   │   │   ├── index.html
+│   │   │   ├── proguard-rules.pro
+│   │   │   └── src
+│   │   │       ├── androidTest
+│   │   │       │   ├── index.html
+│   │   │       │   └── java
+│   │   │       │       ├── hiro
+│   │   │       │       │   ├── MyApp3
+│   │   │       │       │   │   ├── ExampleInstrumentedTest.kt
+│   │   │       │       │   │   └── index.html
+│   │   │       │       │   └── index.html
+│   │   │       │       └── index.html
+│   │   │       ├── index.html
+│   │   │       ├── main
+│   │   │       │   ├── AndroidManifest.xml
+│   │   │       │   ├── index.html
+│   │   │       │   ├── java
+│   │   │       │   │   ├── hiro
+│   │   │       │   │   │   ├── MyApp3
+│   │   │       │   │   │   │   ├── MainActivity.kt
+│   │   │       │   │   │   │   ├── index.html
+│   │   │       │   │   │   │   └── ui
+│   │   │       │   │   │   │       ├── index.html
+│   │   │       │   │   │   │       └── theme
+│   │   │       │   │   │   │           ├── Color.kt
+│   │   │       │   │   │   │           ├── Theme.kt
+│   │   │       │   │   │   │           ├── Type.kt
+│   │   │       │   │   │   │           └── index.html
+│   │   │       │   │   │   └── index.html
+│   │   │       │   │   └── index.html
+│   │   │       │   └── res
+│   │   │       │       ├── drawable
+│   │   │       │       │   ├── ic_launcher_background.xml
+│   │   │       │       │   ├── ic_launcher_foreground.xml
+│   │   │       │       │   └── index.html
+│   │   │       │       ├── index.html
+│   │   │       │       ├── mipmap-anydpi
+│   │   │       │       │   ├── ic_launcher.xml
+│   │   │       │       │   ├── ic_launcher_round.xml
+│   │   │       │       │   └── index.html
+│   │   │       │       ├── mipmap-hdpi
+│   │   │       │       │   ├── ic_launcher.webp
+│   │   │       │       │   ├── ic_launcher_round.webp
+│   │   │       │       │   └── index.html
+│   │   │       │       ├── mipmap-mdpi
+│   │   │       │       │   ├── ic_launcher.webp
+│   │   │       │       │   ├── ic_launcher_round.webp
+│   │   │       │       │   └── index.html
+│   │   │       │       ├── mipmap-xhdpi
+│   │   │       │       │   ├── ic_launcher.webp
+│   │   │       │       │   ├── ic_launcher_round.webp
+│   │   │       │       │   └── index.html
+│   │   │       │       ├── mipmap-xxhdpi
+│   │   │       │       │   ├── ic_launcher.webp
+│   │   │       │       │   ├── ic_launcher_round.webp
+│   │   │       │       │   └── index.html
+│   │   │       │       ├── mipmap-xxxhdpi
+│   │   │       │       │   ├── ic_launcher.webp
+│   │   │       │       │   ├── ic_launcher_round.webp
+│   │   │       │       │   └── index.html
+│   │   │       │       ├── values
+│   │   │       │       │   ├── colors.xml
+│   │   │       │       │   ├── index.html
+│   │   │       │       │   ├── strings.xml
+│   │   │       │       │   └── themes.xml
+│   │   │       │       └── xml
+│   │   │       │           ├── backup_rules.xml
+│   │   │       │           ├── data_extraction_rules.xml
+│   │   │       │           └── index.html
+│   │   │       └── test
+│   │   │           ├── index.html
+│   │   │           └── java
+│   │   │               ├── hiro
+│   │   │               │   ├── MyApp3
+│   │   │               │   │   ├── ExampleUnitTest.kt
+│   │   │               │   │   └── index.html
+│   │   │               │   └── index.html
+│   │   │               └── index.html
+│   │   ├── build.gradle
+│   │   ├── gradle
+│   │   │   ├── gradle-daemon-jvm.properties
+│   │   │   ├── index.html
+│   │   │   ├── libs.versions.toml
+│   │   │   └── wrapper
+│   │   │       ├── gradle-wrapper.jar
+│   │   │       ├── gradle-wrapper.properties
+│   │   │       └── index.html
+│   │   ├── gradle.properties
+│   │   ├── gradlew
+│   │   ├── gradlew.bat
+│   │   ├── index.html
+│   │   └── settings.gradle
+│   ├── MyApplication
+│   │   ├── app
+│   │   │   ├── build.gradle.kts
+│   │   │   ├── index.html
+│   │   │   ├── proguard-rules.pro
+│   │   │   └── src
+│   │   │       ├── androidTest
+│   │   │       │   ├── index.html
+│   │   │       │   └── java
+│   │   │       │       ├── com
+│   │   │       │       │   ├── hiro
+│   │   │       │       │   │   ├── index.html
+│   │   │       │       │   │   └── myapplication
+│   │   │       │       │   │       ├── ExampleInstrumentedTest.java
+│   │   │       │       │   │       └── index.html
+│   │   │       │       │   └── index.html
+│   │   │       │       └── index.html
+│   │   │       ├── index.html
+│   │   │       ├── main
+│   │   │       │   ├── AndroidManifest.xml
+│   │   │       │   ├── index.html
+│   │   │       │   ├── java
+│   │   │       │   │   ├── com
+│   │   │       │   │   │   ├── hiro
+│   │   │       │   │   │   │   ├── index.html
+│   │   │       │   │   │   │   └── myapplication
+│   │   │       │   │   │   │       ├── Downloads.java
+│   │   │       │   │   │   │       ├── MainActivity.java
+│   │   │       │   │   │   │       └── index.html
+│   │   │       │   │   │   └── index.html
+│   │   │       │   │   └── index.html
+│   │   │       │   └── res
+│   │   │       │       ├── drawable
+│   │   │       │       │   ├── ic_launcher_background.xml
+│   │   │       │       │   ├── ic_launcher_foreground.xml
+│   │   │       │       │   └── index.html
+│   │   │       │       ├── index.html
+│   │   │       │       ├── layout
+│   │   │       │       │   ├── activity_downloads.xml
+│   │   │       │       │   ├── activity_main.xml
+│   │   │       │       │   └── index.html
+│   │   │       │       ├── menu
+│   │   │       │       │   ├── index.html
+│   │   │       │       │   └── menu_main.xml
+│   │   │       │       ├── mipmap-anydpi
+│   │   │       │       │   ├── ic_launcher.xml
+│   │   │       │       │   ├── ic_launcher_round.xml
+│   │   │       │       │   └── index.html
+│   │   │       │       ├── mipmap-hdpi
+│   │   │       │       │   ├── ic_launcher.webp
+│   │   │       │       │   ├── ic_launcher_round.webp
+│   │   │       │       │   └── index.html
+│   │   │       │       ├── mipmap-mdpi
+│   │   │       │       │   ├── ic_launcher.webp
+│   │   │       │       │   ├── ic_launcher_round.webp
+│   │   │       │       │   └── index.html
+│   │   │       │       ├── mipmap-xhdpi
+│   │   │       │       │   ├── ic_launcher.webp
+│   │   │       │       │   ├── ic_launcher_round.webp
+│   │   │       │       │   └── index.html
+│   │   │       │       ├── mipmap-xxhdpi
+│   │   │       │       │   ├── ic_launcher.webp
+│   │   │       │       │   ├── ic_launcher_round.webp
+│   │   │       │       │   └── index.html
+│   │   │       │       ├── mipmap-xxxhdpi
+│   │   │       │       │   ├── ic_launcher.webp
+│   │   │       │       │   ├── ic_launcher_round.webp
+│   │   │       │       │   └── index.html
+│   │   │       │       ├── values
+│   │   │       │       │   ├── colors.xml
+│   │   │       │       │   ├── index.html
+│   │   │       │       │   ├── strings.xml
+│   │   │       │       │   └── themes.xml
+│   │   │       │       ├── values-night
+│   │   │       │       │   ├── index.html
+│   │   │       │       │   └── themes.xml
+│   │   │       │       └── xml
+│   │   │       │           ├── backup_rules.xml
+│   │   │       │           ├── data_extraction_rules.xml
+│   │   │       │           └── index.html
+│   │   │       └── test
+│   │   │           ├── index.html
+│   │   │           └── java
+│   │   │               ├── com
+│   │   │               │   ├── hiro
+│   │   │               │   │   ├── index.html
+│   │   │               │   │   └── myapplication
+│   │   │               │   │       ├── ExampleUnitTest.java
+│   │   │               │   │       └── index.html
+│   │   │               │   └── index.html
+│   │   │               └── index.html
+│   │   ├── build.gradle.kts
+│   │   ├── gradle
+│   │   │   ├── index.html
+│   │   │   ├── libs.versions.toml
+│   │   │   └── wrapper
+│   │   │       ├── gradle-wrapper.jar
+│   │   │       ├── gradle-wrapper.properties
+│   │   │       └── index.html
+│   │   ├── gradle.properties
+│   │   ├── gradlew
+│   │   ├── gradlew.bat
+│   │   ├── index.html
+│   │   └── settings.gradle.kts
+│   ├── MyDownloader
+│   │   ├── app
+│   │   │   ├── build.gradle
+│   │   │   ├── index.html
+│   │   │   ├── proguard-rules.pro
+│   │   │   └── src
+│   │   │       ├── androidTest
+│   │   │       │   ├── index.html
+│   │   │       │   └── java
+│   │   │       │       ├── com
+│   │   │       │       │   ├── example
+│   │   │       │       │   │   ├── index.html
+│   │   │       │       │   │   └── mydownloader
+│   │   │       │       │   │       ├── ExampleInstrumentedTest.kt
+│   │   │       │       │   │       └── index.html
+│   │   │       │       │   └── index.html
+│   │   │       │       └── index.html
+│   │   │       ├── index.html
+│   │   │       ├── main
+│   │   │       │   ├── AndroidManifest.xml
+│   │   │       │   ├── index.html
+│   │   │       │   ├── java
+│   │   │       │   │   ├── com
+│   │   │       │   │   │   ├── example
+│   │   │       │   │   │   │   ├── index.html
+│   │   │       │   │   │   │   └── mydownloader
+│   │   │       │   │   │   │       ├── MainActivity.kt
+│   │   │       │   │   │   │       ├── index.html
+│   │   │       │   │   │   │       └── ui
+│   │   │       │   │   │   │           ├── index.html
+│   │   │       │   │   │   │           └── theme
+│   │   │       │   │   │   │               ├── Color.kt
+│   │   │       │   │   │   │               ├── Theme.kt
+│   │   │       │   │   │   │               ├── Type.kt
+│   │   │       │   │   │   │               └── index.html
+│   │   │       │   │   │   └── index.html
+│   │   │       │   │   └── index.html
+│   │   │       │   └── res
+│   │   │       │       ├── drawable
+│   │   │       │       │   ├── ic_launcher_background.xml
+│   │   │       │       │   ├── ic_launcher_foreground.xml
+│   │   │       │       │   └── index.html
+│   │   │       │       ├── index.html
+│   │   │       │       ├── mipmap-anydpi
+│   │   │       │       │   ├── ic_launcher.xml
+│   │   │       │       │   ├── ic_launcher_round.xml
+│   │   │       │       │   └── index.html
+│   │   │       │       ├── mipmap-hdpi
+│   │   │       │       │   ├── ic_launcher.webp
+│   │   │       │       │   ├── ic_launcher_round.webp
+│   │   │       │       │   └── index.html
+│   │   │       │       ├── mipmap-mdpi
+│   │   │       │       │   ├── ic_launcher.webp
+│   │   │       │       │   ├── ic_launcher_round.webp
+│   │   │       │       │   └── index.html
+│   │   │       │       ├── mipmap-xhdpi
+│   │   │       │       │   ├── ic_launcher.webp
+│   │   │       │       │   ├── ic_launcher_round.webp
+│   │   │       │       │   └── index.html
+│   │   │       │       ├── mipmap-xxhdpi
+│   │   │       │       │   ├── ic_launcher.webp
+│   │   │       │       │   ├── ic_launcher_round.webp
+│   │   │       │       │   └── index.html
+│   │   │       │       ├── mipmap-xxxhdpi
+│   │   │       │       │   ├── ic_launcher.webp
+│   │   │       │       │   ├── ic_launcher_round.webp
+│   │   │       │       │   └── index.html
+│   │   │       │       ├── values
+│   │   │       │       │   ├── colors.xml
+│   │   │       │       │   ├── index.html
+│   │   │       │       │   ├── strings.xml
+│   │   │       │       │   └── themes.xml
+│   │   │       │       └── xml
+│   │   │       │           ├── backup_rules.xml
+│   │   │       │           ├── data_extraction_rules.xml
+│   │   │       │           └── index.html
+│   │   │       └── test
+│   │   │           ├── index.html
+│   │   │           └── java
+│   │   │               ├── com
+│   │   │               │   ├── example
+│   │   │               │   │   ├── index.html
+│   │   │               │   │   └── mydownloader
+│   │   │               │   │       ├── ExampleUnitTest.kt
+│   │   │               │   │       └── index.html
+│   │   │               │   └── index.html
+│   │   │               └── index.html
+│   │   ├── build.gradle
+│   │   ├── gradle
+│   │   │   ├── gradle-daemon-jvm.properties
+│   │   │   ├── index.html
+│   │   │   ├── libs.versions.toml
+│   │   │   └── wrapper
+│   │   │       ├── gradle-wrapper.jar
+│   │   │       ├── gradle-wrapper.properties
+│   │   │       └── index.html
+│   │   ├── gradle.properties
+│   │   ├── gradlew
+│   │   ├── gradlew.bat
+│   │   ├── index.html
+│   │   └── settings.gradle
+│   ├── MyDownloader.zip
+│   ├── MyNote
+│   │   ├── app
+│   │   │   ├── build.gradle
+│   │   │   ├── index.html
+│   │   │   └── src
+│   │   │       ├── index.html
+│   │   │       └── main
+│   │   │           ├── AndroidManifest.xml
+│   │   │           └── index.html
+│   │   ├── index.html
+│   │   └── settings.gradle
+│   ├── MyTabletApp
+│   │   ├── AndroidManifest.xml
+│   │   ├── ant.properties
+│   │   ├── bin
+│   │   │   ├── AndroidManifest.xml
+│   │   │   ├── AndroidManifest.xml.d
+│   │   │   ├── MyTabletApp-debug-unaligned.apk
+│   │   │   ├── MyTabletApp-debug-unaligned.apk.d
+│   │   │   ├── MyTabletApp-debug.apk
+│   │   │   ├── MyTabletApp.ap_
+│   │   │   ├── MyTabletApp.ap_.d
+│   │   │   ├── build.prop
+│   │   │   ├── classes
+│   │   │   │   ├── com
+│   │   │   │   │   ├── example
+│   │   │   │   │   │   ├── index.html
+│   │   │   │   │   │   └── tabletapp
+│   │   │   │   │   │       ├── BuildConfig.class
+│   │   │   │   │   │       ├── MainActivity$1.class
+│   │   │   │   │   │       ├── MainActivity.class
+│   │   │   │   │   │       ├── R$attr.class
+│   │   │   │   │   │       ├── R$drawable.class
+│   │   │   │   │   │       ├── R$id.class
+│   │   │   │   │   │       ├── R$layout.class
+│   │   │   │   │   │       ├── R$string.class
+│   │   │   │   │   │       ├── R.class
+│   │   │   │   │   │       └── index.html
+│   │   │   │   │   └── index.html
+│   │   │   │   └── index.html
+│   │   │   ├── classes.dex
+│   │   │   ├── classes.dex.d
+│   │   │   ├── index.html
+│   │   │   ├── proguard.txt
+│   │   │   └── res
+│   │   │       ├── drawable-hdpi
+│   │   │       │   ├── ic_launcher.png
+│   │   │       │   └── index.html
+│   │   │       ├── drawable-ldpi
+│   │   │       │   ├── ic_launcher.png
+│   │   │       │   └── index.html
+│   │   │       ├── drawable-mdpi
+│   │   │       │   ├── ic_launcher.png
+│   │   │       │   └── index.html
+│   │   │       ├── drawable-xhdpi
+│   │   │       │   ├── ic_launcher.png
+│   │   │       │   └── index.html
+│   │   │       └── index.html
+│   │   ├── build.xml
+│   │   ├── gen
+│   │   │   ├── R.java.d
+│   │   │   ├── com
+│   │   │   │   ├── example
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── tabletapp
+│   │   │   │   │       ├── BuildConfig.java
+│   │   │   │   │       ├── R.java
+│   │   │   │   │       └── index.html
+│   │   │   │   └── index.html
+│   │   │   └── index.html
+│   │   ├── index.html
+│   │   ├── local.properties
+│   │   ├── proguard-project.txt
+│   │   ├── project.properties
+│   │   ├── res
+│   │   │   ├── drawable-hdpi
+│   │   │   │   ├── ic_launcher.png
+│   │   │   │   └── index.html
+│   │   │   ├── drawable-ldpi
+│   │   │   │   ├── ic_launcher.png
+│   │   │   │   └── index.html
+│   │   │   ├── drawable-mdpi
+│   │   │   │   ├── ic_launcher.png
+│   │   │   │   └── index.html
+│   │   │   ├── drawable-xhdpi
+│   │   │   │   ├── ic_launcher.png
+│   │   │   │   └── index.html
+│   │   │   ├── index.html
+│   │   │   ├── layout
+│   │   │   │   ├── index.html
+│   │   │   │   └── main.xml
+│   │   │   ├── layout-sw720dp
+│   │   │   │   ├── index.html
+│   │   │   │   └── main.xml
+│   │   │   └── values
+│   │   │       ├── index.html
+│   │   │       └── strings.xml
+│   │   └── src
+│   │       ├── com
+│   │       │   ├── example
+│   │       │   │   ├── index.html
+│   │       │   │   └── tabletapp
+│   │       │   │       ├── MainActivity.java
+│   │       │   │       └── index.html
+│   │       │   └── index.html
+│   │       └── index.html
+│   ├── MyWebView
+│   │   ├── app
+│   │   │   ├── build.gradle
+│   │   │   ├── index.html
+│   │   │   ├── proguard-rules.pro
+│   │   │   └── src
+│   │   │       ├── WebView-Src.zip
+│   │   │       ├── androidTest
+│   │   │       │   ├── index.html
+│   │   │       │   └── java
+│   │   │       │       ├── com
+│   │   │       │       │   ├── hiro
+│   │   │       │       │   │   ├── index.html
+│   │   │       │       │   │   └── take
+│   │   │       │       │   │       ├── index.html
+│   │   │       │       │   │       └── mywebview
+│   │   │       │       │   │           ├── ExampleInstrumentedTest.kt
+│   │   │       │       │   │           └── index.html
+│   │   │       │       │   └── index.html
+│   │   │       │       └── index.html
+│   │   │       ├── index.html
+│   │   │       ├── main
+│   │   │       │   ├── AndroidManifest.xml
+│   │   │       │   ├── index.html
+│   │   │       │   ├── java
+│   │   │       │   │   ├── com
+│   │   │       │   │   │   ├── hiro
+│   │   │       │   │   │   │   ├── index.html
+│   │   │       │   │   │   │   └── take
+│   │   │       │   │   │   │       ├── index.html
+│   │   │       │   │   │   │       └── mywebview
+│   │   │       │   │   │   │           ├── MainActivity.kt
+│   │   │       │   │   │   │           ├── Web.kt
+│   │   │       │   │   │   │           ├── index.html
+│   │   │       │   │   │   │           └── ui
+│   │   │       │   │   │   │               ├── index.html
+│   │   │       │   │   │   │               └── theme
+│   │   │       │   │   │   │                   ├── Color.kt
+│   │   │       │   │   │   │                   ├── Theme.kt
+│   │   │       │   │   │   │                   ├── Type.kt
+│   │   │       │   │   │   │                   └── index.html
+│   │   │       │   │   │   └── index.html
+│   │   │       │   │   └── index.html
+│   │   │       │   └── res
+│   │   │       │       ├── drawable
+│   │   │       │       │   ├── ic_launcher_background.xml
+│   │   │       │       │   ├── ic_launcher_foreground.xml
+│   │   │       │       │   └── index.html
+│   │   │       │       ├── index.html
+│   │   │       │       ├── layout
+│   │   │       │       │   ├── index.html
+│   │   │       │       │   ├── main.xml
+│   │   │       │       │   └── web.xml
+│   │   │       │       ├── mipmap-anydpi-v26
+│   │   │       │       │   ├── ic_launcher.xml
+│   │   │       │       │   ├── ic_launcher_round.xml
+│   │   │       │       │   └── index.html
+│   │   │       │       ├── mipmap-hdpi
+│   │   │       │       │   ├── ic_launcher.webp
+│   │   │       │       │   ├── ic_launcher_round.webp
+│   │   │       │       │   └── index.html
+│   │   │       │       ├── mipmap-mdpi
+│   │   │       │       │   ├── ic_launcher.webp
+│   │   │       │       │   ├── ic_launcher_round.webp
+│   │   │       │       │   └── index.html
+│   │   │       │       ├── mipmap-xhdpi
+│   │   │       │       │   ├── ic_launcher.webp
+│   │   │       │       │   ├── ic_launcher_round.webp
+│   │   │       │       │   └── index.html
+│   │   │       │       ├── mipmap-xxhdpi
+│   │   │       │       │   ├── ic_launcher.webp
+│   │   │       │       │   ├── ic_launcher_round.webp
+│   │   │       │       │   └── index.html
+│   │   │       │       ├── mipmap-xxxhdpi
+│   │   │       │       │   ├── ic_launcher.webp
+│   │   │       │       │   ├── ic_launcher_round.webp
+│   │   │       │       │   └── index.html
+│   │   │       │       ├── values
+│   │   │       │       │   ├── colors.xml
+│   │   │       │       │   ├── index.html
+│   │   │       │       │   ├── strings.xml
+│   │   │       │       │   └── themes.xml
+│   │   │       │       └── xml
+│   │   │       │           ├── backup_rules.xml
+│   │   │       │           ├── data_extraction_rules.xml
+│   │   │       │           └── index.html
+│   │   │       └── test
+│   │   │           ├── index.html
+│   │   │           └── java
+│   │   │               ├── com
+│   │   │               │   ├── hiro
+│   │   │               │   │   ├── index.html
+│   │   │               │   │   └── take
+│   │   │               │   │       ├── index.html
+│   │   │               │   │       └── mywebview
+│   │   │               │   │           ├── ExampleUnitTest.kt
+│   │   │               │   │           └── index.html
+│   │   │               │   └── index.html
+│   │   │               └── index.html
+│   │   ├── build.gradle
+│   │   ├── gradle
+│   │   │   ├── index.html
+│   │   │   ├── libs.versions.toml
+│   │   │   └── wrapper
+│   │   │       ├── gradle-wrapper.jar
+│   │   │       ├── gradle-wrapper.properties
+│   │   │       └── index.html
+│   │   ├── gradle.properties
+│   │   ├── gradlew
+│   │   ├── gradlew.bat
+│   │   ├── index.html
+│   │   └── settings.gradle
+│   ├── PDFViewer
+│   │   ├── AndroidManifest.xml
+│   │   ├── ant.properties
+│   │   ├── build.xml
+│   │   ├── index.html
+│   │   ├── local.properties
+│   │   ├── proguard-project.txt
+│   │   ├── project.properties
+│   │   ├── res
+│   │   │   ├── drawable-hdpi
+│   │   │   │   ├── ic_launcher.png
+│   │   │   │   └── index.html
+│   │   │   ├── drawable-ldpi
+│   │   │   │   ├── ic_launcher.png
+│   │   │   │   └── index.html
+│   │   │   ├── drawable-mdpi
+│   │   │   │   ├── ic_launcher.png
+│   │   │   │   └── index.html
+│   │   │   ├── drawable-xhdpi
+│   │   │   │   ├── ic_launcher.png
+│   │   │   │   └── index.html
+│   │   │   ├── index.html
+│   │   │   ├── layout
+│   │   │   │   ├── index.html
+│   │   │   │   └── main.xml
+│   │   │   └── values
+│   │   │       ├── index.html
+│   │   │       └── strings.xml
+│   │   └── src
+│   │       ├── hiro
+│   │       │   ├── index.html
+│   │       │   └── take
+│   │       │       ├── index.html
+│   │       │       └── pdf
+│   │       │           ├── index.html
+│   │       │           └── viewer
+│   │       │               ├── MainActivity.java
+│   │       │               └── index.html
+│   │       └── index.html
+│   ├── index.html
+│   └── ndk
+│       ├── Hello
+│       │   ├── hello.c
+│       │   ├── hello_fire7
+│       │   ├── hello_x86
+│       │   └── index.html
+│       └── index.html
+├── AndroidApp.html
+├── Clang.html
+├── Java.html
+├── Linux.html
+├── List.txt
+├── Windows
+│   ├── index.html
+│   └── rufus
+│       ├── index.html
+│       └── rufus.txt
+├── a.txt
+├── bash-one.txt
+├── curl-gemini
+│   ├── gemini-file-write
+│   │   ├── gemini_ask.sh
+│   │   ├── index.html
+│   │   └── こんにちは.txt
+│   └── index.html
+├── curses
+│   ├── editor
+│   │   ├── index.html
+│   │   ├── out.log
+│   │   ├── pyhiropad.py
+│   │   └── pyhiropad.py.txt
+│   ├── fwrite
+│   │   ├── getkey.py
+│   │   ├── getkey.py.txt
+│   │   ├── index.html
+│   │   ├── myfile.txt
+│   │   ├── mytext.txt
+│   │   └── out.log
+│   ├── hello
+│   │   ├── error.log
+│   │   ├── hello-1.py
+│   │   ├── hello.py
+│   │   ├── hello.py.txt
+│   │   └── index.html
+│   └── index.html
+├── error.tar
+├── error.txt
+├── error.zip
+├── gemini
+│   ├── gemini_ask.sh
+│   ├── hello-python-gemini.py
+│   ├── index.html
+│   ├── output.txt
+│   ├── save.txt
+│   ├── up-gemini.py
+│   └── コマンドラインforPython&Gemini.txt
+├── homepage.zip
+├── index.html
+├── log
+├── log.tar
+├── log.zip
+├── make_menu.sh
+├── make_menu.txt
+├── menu.zip
+├── model.txt
+├── modelList
+├── modellist-my.py
+├── notFondGoole.txt
+├── notFound-google.generativeai.txt
+├── python3
+│   ├── curses
+│   │   ├── editor
+│   │   │   ├── index.html
+│   │   │   ├── out.log
+│   │   │   ├── pyhiropad.py
+│   │   │   └── pyhiropad.py.txt
+│   │   ├── fwrite
+│   │   │   ├── getkey.py
+│   │   │   ├── getkey.py.txt
+│   │   │   ├── index.html
+│   │   │   ├── myfile.txt
+│   │   │   ├── mytext.txt
+│   │   │   └── out.log
+│   │   ├── hello
+│   │   │   ├── error.log
+│   │   │   ├── hello-1.py
+│   │   │   ├── hello.py
+│   │   │   ├── hello.py.txt
+│   │   │   └── index.html
+│   │   └── index.html
+│   ├── gemini
+│   │   ├── hello-python-gemini.py
+│   │   ├── index.html
+│   │   ├── save.txt
+│   │   ├── tree-homepage-index.txt
+│   │   ├── up-gemini.py
+│   │   └── コマンドラインforPython&Gemini.txt
+│   ├── gtk
+│   │   ├── index.html
+│   │   └── window
+│   │       ├── index.html
+│   │       ├── window.py
+│   │       └── window.py.txt
+│   ├── hello
+│   │   ├── hello.py
+│   │   ├── hello.py.txt
+│   │   └── index.html
+│   ├── hello2
+│   │   ├── hello-qt.py
+│   │   ├── hello-qt.py.txt
+│   │   └── index.html
+│   ├── if_is_true
+│   │   ├── index.html
+│   │   ├── trues.py
+│   │   └── trues.py.txt
+│   ├── index.html
+│   ├── list
+│   │   ├── flist.py
+│   │   ├── flist.py.txt
+│   │   ├── get-list-index.py
+│   │   ├── get-list-index.py.txt
+│   │   ├── glist-error.py
+│   │   ├── glist-error.py.txt
+│   │   ├── index.html
+│   │   ├── list-loop.py
+│   │   ├── list-loop.py.txt
+│   │   ├── list1.py
+│   │   └── list1.py.txt
+│   ├── py-editor
+│   │   ├── MYName.txt
+│   │   ├── index.html
+│   │   └── py-editor.py
+│   ├── py-game
+│   │   ├── 1
+│   │   ├── CantBeUp.txt
+│   │   ├── HowMachGeminiPlan.txt
+│   │   ├── LineUp.sh
+│   │   ├── OneFileGemini.sh
+│   │   ├── block.py
+│   │   ├── emp.txt
+│   │   ├── error.txt
+│   │   ├── gemini-up.sh
+│   │   ├── gemini-up.txt
+│   │   ├── geminiTwo.sh
+│   │   ├── index.html
+│   │   ├── lgo
+│   │   ├── lo
+│   │   ├── log
+│   │   ├── log.txt
+│   │   ├── one-fileGemini.txt
+│   │   ├── out.put.txt
+│   │   ├── py file.txt
+│   │   ├── result.txt
+│   │   ├── two.txt
+│   │   ├── y.txt
+│   │   ├── ブロック.py.txt
+│   │   └── ブロック崩し-gamepad.py
+│   ├── py-mp3-player
+│   │   ├── index.html
+│   │   └── mp3-player.py
+│   ├── python3-mp3-editor
+│   │   ├── index.html
+│   │   └── mp3-editor.py
+│   ├── qt-ftp
+│   │   ├── ftp.py
+│   │   ├── ftp.py.txt
+│   │   ├── hello-qt.py
+│   │   ├── hello-qt.py.txt
+│   │   └── index.html
+│   ├── size
+│   │   ├── index.html
+│   │   └── simple_size.py
+│   ├── tasu
+│   │   ├── index.html
+│   │   ├── num.py
+│   │   └── num.py.txt
+│   └── while_when_exit
+│       ├── index.html
+│       ├── while_finish.py
+│       └── while_finish.py.txt
+├── qt-ftp
+│   ├── ftp.py
+│   ├── ftp.py.txt
+│   ├── hello-qt.py
+│   ├── hello-qt.py.txt
+│   └── index.html
+├── sh-size.txt
+├── size
+│   ├── index.html
+│   └── simple_size.py
+├── size.sh
+├── style.css
+├── tree-homepage.txt
+├── tree.log
+├── venvInstall.txt
+├── windows.html
+├── write-code.txt
+└── こんにちは.txt
+
+319 directories, 798 files

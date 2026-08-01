@@ -1,0 +1,5 @@
+takesue090@penguin:~/homepage$ sh ./make_menu.sh 
+インデックス作成を開始します: /home/takesue090/homepage
+./make_menu.sh: line 39: syntax error: bad for loop variable
+takesue090@penguin:~/homepage$ gedit ./make_menu.sh 
+takesue090@penguin:~/homepage$ 
