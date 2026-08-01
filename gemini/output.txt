@@ -1,0 +1,90 @@
+Python 3.13で、ご希望の形式（`python3.13 gemini.py <upload-file.txt> <prompt> <output.txt>`）でGemini APIを呼び出すスクリプトを作成します。
+
+最近のGoogle公式SDKである `google-genai` ライブラリを使用します。ファイルサイズが小さい場合はテキストとしてそのままプロンプトに含めることもできますが、大きなファイルにも対応できるよう、**Files API（ファイルをアップロードする方法）**を使用します。
+
+### 1. 事前準備
+
+必要なライブラリをインストールします。
+
+```bash
+pip install google-genai
+```
+
+APIキーを環境変数に設定します。
+```bash
+export GEMINI_API_KEY="あなたのAPIキー"
+```
+
+### 2. スクリプトの作成 (`gemini.py`)
+
+以下のコードを `gemini.py` という名前で保存してください。
+
+```python
+import argparse
+import sys
+from google import genai
+from google.genai import types
+
+
+def main():
+    # コマンドライン引数の設定
+    parser = argparse.ArgumentParser(
+        description="Gemini API file processor"
+    )
+    parser.add_argument("file_path", help="Path to the file to upload")
+    parser.add_argument("prompt", help="Prompt for Gemini")
+    parser.add_argument("output_path", help="Path to save the output")
+
+    args = parser.parse_args()
+
+    # クライアントの初期化 (環境変数 GEMINI_API_KEY を自動読み込み)
+    try:
+        client = genai.Client()
+    except Exception as e:
+        print(f"Error initializing client: {e}", file=sys.stderr)
+        print("Please set the GEMINI_API_KEY environment variable.", file=sys.stderr)
+        sys.exit(1)
+
+    try:
+        # 1. ファイルのアップロード
+        print(f"Uploading {args.file_path}...")
+        uploaded_file = client.files.upload(file=args.file_path)
+        print(f"Uploaded as: {uploaded_file.name}")
+
+        # 2. Geminiによる処理 (デフォルトで gemini-2.5-flash を使用)
+        print(f"Generating content with prompt: '{args.prompt}'...")
+        response = client.models.generate_content(
+            model="gemini-2.5-flash",
+            contents=[uploaded_file, args.prompt],
+        )
+
+        # 3. 結果の出力ファイルへの保存
+        with open(args.output_path, "w", encoding="utf-8") as f:
+            f.write(response.text)
+
+        print(f"Output saved to {args.output_path}")
+
+        # 4. (推奨) アップロードしたファイルの削除
+        client.files.delete(name=uploaded_file.name)
+
+    except Exception as e:
+        print(f"An error occurred: {e}", file=sys.stderr)
+        sys.exit(1)
+
+
+if __name__ == "__main__":
+    main()
+```
+
+### 3. 実行方法
+
+ターミナルで以下のように実行します。
+
+```bash
+python3.13 gemini.py input.txt "このファイルを日本語に翻訳して" output.txt
+```
+
+### ポイント
+* **Python 3.13対応**: 最新の `google-genai` SDKを使用しており、Python 3.13でも問題なく動作します。
+* **モデル**: 高速かつコストパフォーマンスの良い `gemini-2.5-flash` を使用しています。
+* **ファイルのクリーンアップ**: API側にファイルを残さないよう、処理完了後に自動的にファイルを削除する処理を入れています。
