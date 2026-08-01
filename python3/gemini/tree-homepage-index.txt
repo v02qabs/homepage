@@ -1,0 +1,182 @@
+ご提示いただいたディレクトリ・ファイル構造（`tree-homepage.txt`の内容）に基づき、**すべてのディレクトリに自動で `index.html` を作成し、相互にリンクで行き来できるようにする一括処理用のBashスクリプト**を作成しました。
+
+このスクリプトを実行すると、各階層にデザインされた `index.html` が自動生成され、トップページ（`/home/takesue090/homepage/index.html`）へのアクセスリンクもすべてのページに完備されます。
+
+---
+
+### 一括生成スクリプト: `make_menu.sh`
+
+以下のコードを `/home/takesue090/homepage/make_menu.sh` として保存してください。
+
+```bash
+#!/bin/bash
+
+# ホームページのルート絶対パス
+HOMEPAGE_ROOT="/home/takesue090/homepage"
+HOMEPAGE_INDEX="$HOMEPAGE_ROOT/index.html"
+
+# スクリプトがあるディレクトリ（または第1引数で指定されたディレクトリ）を起点とする
+TARGET_DIR="${1:-$HOMEPAGE_ROOT}"
+
+# 対象ディレクトリに移動
+if ! cd "$TARGET_DIR"; then
+    echo "エラー: ディレクトリ $TARGET_DIR に移動できませんでした。"
+    exit 1
+fi
+
+echo "インデックス作成を開始します: $TARGET_DIR"
+
+# すべてのディレクトリを再帰的に検索してループ処理
+find . -type d | while read -r dir; do
+    # 進行状況表示のためにカレントディレクトリ名を取得
+    clean_dir=${dir#./}
+    if [ "$clean_dir" = "." ]; then
+        clean_dir="[ルート]"
+    fi
+
+    # 階層の深さを計算し、ルートへの相対パスを作成する
+    # 例: ./python3/curses -> ../../
+    depth_dir=${dir#./}
+    if [ "$depth_dir" = "." ] || [ "$depth_dir" = "" ]; then
+        depth=0
+    else
+        # スラッシュの数を数える
+        slashes=$(temp="${depth_dir//[^\/]/}"; echo "${#temp}")
+        depth=$((slashes + 1))
+    fi
+
+    # 相対パスによるホームへのリンクを作成
+    rel_to_root=""
+    for ((i=0; i<depth; i++)); do
+        rel_to_root="../$rel_to_root"
+    done
+    if [ -z "$rel_to_root" ]; then
+        rel_to_root="./"
+    fi
+
+    index_file="$dir/index.html"
+    echo "生成中: $index_file (階層深さ: $depth)"
+
+    # HTMLのヘッダー部分書き込み
+    cat <<EOF > "$index_file"
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index of /${dir#./}</title>
+    <style>
+        body { font-family: 'Helvetica Neue', Arial, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; color: #333; background-color: #f8f9fa; }
+        h1 { border-bottom: 2px solid #007bff; padding-bottom: 10px; color: #007bff; font-size: 1.6em; word-break: break-all; }
+        .nav-links { margin-bottom: 20px; padding: 12px; background-color: #e9ecef; border-radius: 5px; display: flex; flex-wrap: wrap; gap: 10px; }
+        .nav-links a { text-decoration: none; color: #fff; font-weight: bold; padding: 6px 12px; border-radius: 4px; font-size: 0.9em; }
+        .btn-home-abs { background-color: #28a745; } /* 絶対パス用 */
+        .btn-home-rel { background-color: #007bff; } /* 相対パス用 */
+        .btn-up { background-color: #6c757d; }       /* 1つ上用 */
+        .nav-links a:hover { opacity: 0.85; text-decoration: none; }
+        ul { list-style: none; padding: 0; margin: 0; }
+        li { padding: 10px; border-bottom: 1px solid #dee2e6; display: flex; align-items: center; }
+        li:hover { background-color: #f1f3f5; }
+        .icon { margin-right: 12px; font-size: 1.2em; display: inline-block; width: 20px; text-align: center; }
+        .file-link { text-decoration: none; color: #495057; font-weight: 500; flex-grow: 1; word-break: break-all; }
+        .file-link:hover { color: #007bff; }
+    </style>
+</head>
+<body>
+
+    <h1>📁 Index of /${dir#./}</h1>
+
+    <div class="nav-links">
+        <!-- 仕様に基づき、ご指定の絶対パスへのリンクを設置 -->
+        <a href="file://${HOMEPAGE_INDEX}" class="btn-home-abs">🏠 ホーム (絶対パス)</a>
+        <!-- ローカル、Webサーバー両対応のための相対パスホームリンク -->
+        <a href="${rel_to_root}index.html" class="btn-home-rel">🏠 ホーム (相対パス)</a>
+EOF
+
+    # もしルートディレクトリでなければ「1つ上の階層へ」のリンクを追加
+    if [ "$depth" -gt 0 ]; then
+        echo "        <a href=\"../index.html\" class=\"btn-up\">↩ 1つ上の階層へ</a>" >> "$index_file"
+    fi
+
+    cat <<EOF >> "$index_file"
+    </div>
+
+    <ul>
+EOF
+
+    # --- 1. 子ディレクトリのリストを追加 ---
+    find "$dir" -maxdepth 1 -mindepth 1 -type d | sort | while read -r subdir; do
+        sub_base=$(basename "$subdir")
+        # 隠しディレクトリは除外
+        [[ "$sub_base" =~ ^\. ]] && continue
+        
+        echo "        <li><span class=\"icon\">📁</span><a class=\"file-link\" href=\"${sub_base}/index.html\">${sub_base}/</a></li>" >> "$index_file"
+    done
+
+    # --- 2. ファイルのリストを追加 ---
+    find "$dir" -maxdepth 1 -mindepth 1 -type f | sort | while read -r file; do
+        file_base=$(basename "$file")
+        
+        # 隠しファイル、index.html、および生成スクリプト自体は除外する
+        [[ "$file_base" =~ ^\. ]] && continue
+        [ "$file_base" = "index.html" ] && continue
+        [ "$file_base" = "make_menu.sh" ] && continue
+        
+        echo "        <li><span class=\"icon\">📄</span><a class=\"file-link\" href=\"${file_base}\">${file_base}</a></li>" >> "$index_file"
+    done
+
+    # HTMLのフッター部分書き込み
+    cat <<EOF >> "$index_file"
+    </ul>
+
+    <footer style="margin-top: 30px; padding-top: 10px; border-top: 1px solid #dee2e6; font-size: 0.8em; color: #6c757d; text-align: center;">
+        自動生成日時: $(date '+%Y-%m-%d %H:%M:%S')
+    </footer>
+</body>
+</html>
+EOF
+
+done
+
+echo "すべての index.html の生成が完了しました！"
+```
+
+---
+
+### 使い方・実行手順
+
+1. **スクリプトを作成・保存する**
+   上記のコードをコピーし、`/home/takesue090/homepage/make_menu.sh` というファイル名で作成します。
+
+   ```bash
+   nano /home/takesue090/homepage/make_menu.sh
+   # (コードを貼り付けて保存: Ctrl+O -> Enter -> Ctrl+X)
+   ```
+
+2. **実行権限を与える**
+   スクリプトを実行できるように権限を変更します。
+
+   ```bash
+   chmod +x /home/takesue090/homepage/make_menu.sh
+   ```
+
+3. **スクリプトを実行する**
+   以下のコマンドを実行するだけで、全ディレクトリ構造を自動解析し、各階層に `index.html` が一括作成されます。
+
+   ```bash
+   /home/takesue090/homepage/make_menu.sh
+   ```
+
+---
+
+### 仕様の特徴
+
+1. **アクセス制限なし（絶対・相対両対応リンク）**
+   * 仕様要件である「`/home/takesue090/homepage/index.html` へアクセスできる仕様」を満たすため、全ページの上部に「**🏠 ホーム (絶対パス)**」へのリンク（ブラウザで直開きできる `file:///home/takesue090/homepage/index.html`）を配置しています。
+   * 同時に、将来的にWebサーバー（ApacheやNginx等）で公開した場合や、他のPCにフォルダごと移動した場合でもリンクが壊れないよう、「**🏠 ホーム (相対パス)**」および「**↩ 1つ上の階層へ**」のリンクも完備しています。
+
+2. **綺麗なUIデザイン**
+   見やすさを考慮し、フォルダには「📁」、ファイルには「📄」のアイコンを自動付与したモダンなデザインに仕上がります。
+
+3. **安全設計**
+   生成される `index.html` のリスト内に、自分自身の `index.html` や、管理用スクリプト `make_menu.sh` は表示されないように除外フィルタをかけています。

@@ -1,0 +1,3 @@
+# view AndroidManifest.xml #generated:11
+-keep class hiro.take.html.viewer.MainActivity { <init>(...); }
+

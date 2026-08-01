@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/urlEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ダウンロードURL" />
+   <EditText
+		android:id="@+id/download_local_Text"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:hint="保存ファイル名"/>
+
+    <Button
+        android:id="@+id/downloadButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ダウンロード" />
+	<Button
+		android:id="@+id/from_site"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="サイトを探す"/>
+	<Button
+		android:id="@+id/dir_command"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="ファイルリスト"/>
+		
+</LinearLayout>
