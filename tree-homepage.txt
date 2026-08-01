@@ -1,0 +1,158 @@
+.
+├── 503.txt
+├── AndroidApp.html
+├── Clang.html
+├── Java.html
+├── Linux.html
+├── List.txt
+├── Windows
+│   └── rufus
+│       └── rufus.txt
+├── a.txt
+├── bash-one.txt
+├── curl-gemini
+│   └── gemini-file-write
+│       ├── gemini_ask.sh
+│       └── こんにちは.txt
+├── curses
+│   ├── editor
+│   │   ├── out.log
+│   │   ├── pyhiropad.py
+│   │   └── pyhiropad.py.txt
+│   ├── fwrite
+│   │   ├── getkey.py
+│   │   ├── getkey.py.txt
+│   │   ├── myfile.txt
+│   │   ├── mytext.txt
+│   │   └── out.log
+│   └── hello
+│       ├── error.log
+│       ├── hello-1.py
+│       ├── hello.py
+│       └── hello.py.txt
+├── error.tar
+├── error.txt
+├── error.zip
+├── gemini
+│   ├── gemini_ask.sh
+│   ├── hello-python-gemini.py
+│   ├── output.txt
+│   ├── save.txt
+│   ├── up-gemini.py
+│   └── コマンドラインforPython&Gemini.txt
+├── homepage.zip
+├── index.html
+├── log
+├── log.zip
+├── make_menu.sh
+├── model.txt
+├── modelList
+├── modellist-my.py
+├── notFondGoole.txt
+├── notFound-google.generativeai.txt
+├── python3
+│   ├── curses
+│   │   ├── editor
+│   │   │   ├── out.log
+│   │   │   ├── pyhiropad.py
+│   │   │   └── pyhiropad.py.txt
+│   │   ├── fwrite
+│   │   │   ├── getkey.py
+│   │   │   ├── getkey.py.txt
+│   │   │   ├── myfile.txt
+│   │   │   ├── mytext.txt
+│   │   │   └── out.log
+│   │   └── hello
+│   │       ├── error.log
+│   │       ├── hello-1.py
+│   │       ├── hello.py
+│   │       └── hello.py.txt
+│   ├── gemini
+│   │   ├── hello-python-gemini.py
+│   │   ├── save.txt
+│   │   ├── up-gemini.py
+│   │   └── コマンドラインforPython&Gemini.txt
+│   ├── gtk
+│   │   └── window
+│   │       ├── window.py
+│   │       └── window.py.txt
+│   ├── hello
+│   │   ├── hello.py
+│   │   └── hello.py.txt
+│   ├── hello2
+│   │   ├── hello-qt.py
+│   │   └── hello-qt.py.txt
+│   ├── if_is_true
+│   │   ├── trues.py
+│   │   └── trues.py.txt
+│   ├── list
+│   │   ├── flist.py
+│   │   ├── flist.py.txt
+│   │   ├── get-list-index.py
+│   │   ├── get-list-index.py.txt
+│   │   ├── glist-error.py
+│   │   ├── glist-error.py.txt
+│   │   ├── list-loop.py
+│   │   ├── list-loop.py.txt
+│   │   ├── list1.py
+│   │   └── list1.py.txt
+│   ├── py-editor
+│   │   ├── MYName.txt
+│   │   └── py-editor.py
+│   ├── py-game
+│   │   ├── 1
+│   │   ├── CantBeUp.txt
+│   │   ├── HowMachGeminiPlan.txt
+│   │   ├── LineUp.sh
+│   │   ├── OneFileGemini.sh
+│   │   ├── block.py
+│   │   ├── emp.txt
+│   │   ├── error.txt
+│   │   ├── gemini-up.sh
+│   │   ├── gemini-up.txt
+│   │   ├── geminiTwo.sh
+│   │   ├── lgo
+│   │   ├── lo
+│   │   ├── log
+│   │   ├── log.txt
+│   │   ├── one-fileGemini.txt
+│   │   ├── out.put.txt
+│   │   ├── py file.txt
+│   │   ├── result.txt
+│   │   ├── two.txt
+│   │   ├── y.txt
+│   │   ├── ブロック.py.txt
+│   │   └── ブロック崩し-gamepad.py
+│   ├── py-mp3-player
+│   │   └── mp3-player.py
+│   ├── python3-mp3-editor
+│   │   └── mp3-editor.py
+│   ├── qt-ftp
+│   │   ├── ftp.py
+│   │   ├── ftp.py.txt
+│   │   ├── hello-qt.py
+│   │   └── hello-qt.py.txt
+│   ├── size
+│   │   └── simple_size.py
+│   ├── tasu
+│   │   ├── num.py
+│   │   └── num.py.txt
+│   └── while_when_exit
+│       ├── while_finish.py
+│       └── while_finish.py.txt
+├── qt-ftp
+│   ├── ftp.py
+│   ├── ftp.py.txt
+│   ├── hello-qt.py
+│   └── hello-qt.py.txt
+├── sh-size.txt
+├── size
+│   └── simple_size.py
+├── size.sh
+├── style.css
+├── tree-homepage.txt
+├── venvInstall.txt
+├── windows.html
+└── こんにちは.txt
+
+32 directories, 124 files
